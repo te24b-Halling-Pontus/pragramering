@@ -26,13 +26,14 @@ string fokusera;
 string tilbehor;
 Console.WriteLine("vad är din favorit mat");
 favorit_mat = Console.ReadLine();
-Console.WriteLine("vad är den viktigaste delen i din" + favorit_mat);
+Console.WriteLine("vad är den viktigaste delen i din " + favorit_mat);
 viktig_del = Console.ReadLine();
 Console.WriteLine("vad är det man ska fokusera på för att få det perfekta " + viktig_del);
 fokusera = Console.ReadLine();
-Console.WriteLine("vad är det bästa tilbehöret t.ex ketscup på carbonara");
+Console.WriteLine("vad är det bästa tillbehöret t.ex ketchup på carbonara");
 tilbehor = Console.ReadLine();
 
-Console.WriteLine($"Den bästa maten i värden är {favorit_mat}. Hur skulle man kunna leva utan {favorit_mat}? Den bästa och viktigaste delen av en {favorit_mat} är {viktig_del} ");
+Console.WriteLine($"Den bästa maten i världen är {favorit_mat}! Hur skulle man kunna leva utan {favorit_mat}? för att få den bästa {favorit_mat} måste man göra {viktig_del} rätt. Det gör man genom att fokusera på {fokusera}. Men man får inte häller glöma den viktiga {tilbehor} som krydar till {favorit_mat}n lite. Det är så du får den perfekta {favorit_mat}n!");
+Console.WriteLine("Mvh " + name);
 
-
+Console.ReadLine();
