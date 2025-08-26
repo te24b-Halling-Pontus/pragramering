@@ -20,20 +20,29 @@ string name;
 Console.WriteLine("vad heter du?");
 name = Console.ReadLine();
 
-string favorit_mat;
-string viktig_del;
+string favoritMat;
+string viktigdel;
 string fokusera;
 string tilbehor;
 Console.WriteLine("vad är din favorit mat");
-favorit_mat = Console.ReadLine();
-Console.WriteLine("vad är den viktigaste delen i din " + favorit_mat);
-viktig_del = Console.ReadLine();
-Console.WriteLine("vad är det man ska fokusera på för att få det perfekta " + viktig_del);
+favoritMat = Console.ReadLine();
+if (favoritMat == "Tacos" || favoritMat == "taco")
+{
+    Console.WriteLine("bra val");
+}
+else
+{
+    Console.WriteLine("Finns godare");
+}
+Console.WriteLine("vad är den viktigaste delen i din " + favoritMat);
+viktigdel = Console.ReadLine();
+Console.WriteLine("vad är det man ska fokusera på för att få det perfekta " + viktigdel);
 fokusera = Console.ReadLine();
 Console.WriteLine("vad är det bästa tillbehöret t.ex ketchup på carbonara");
 tilbehor = Console.ReadLine();
 
-Console.WriteLine($"Den bästa maten i världen är {favorit_mat}! Hur skulle man kunna leva utan {favorit_mat}? för att få den bästa {favorit_mat} måste man göra {viktig_del} rätt. Det gör man genom att fokusera på {fokusera}. Men man får inte häller glöma den viktiga {tilbehor} som krydar till {favorit_mat}n lite. Det är så du får den perfekta {favorit_mat}n!");
+Console.WriteLine($"Den bästa maten i världen är {favoritMat}! Hur skulle man kunna leva utan {favoritMat}? för att få den bästa {favoritMat} måste man göra {viktigdel} rätt. Det gör man genom att fokusera på {fokusera}. Men man får inte häller glöma den viktiga {tilbehor} som krydar till {favoritMat}n lite. Det är så du får den perfekta {favoritMat}n!");
 Console.WriteLine("Mvh " + name);
+
 
 Console.ReadLine();
